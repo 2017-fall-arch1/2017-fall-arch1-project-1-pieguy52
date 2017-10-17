@@ -12,9 +12,20 @@ treeNode *BSTreeAlloc(){
 }
 
 treeNode *insertion(treeNode *node, char *nameIn){
+  int len;
+  char *scopy;
+
+
+  for(len =0; nameIn[len]; len++)
+    ;
+  scopy = (char *) malloc(len+1);
+  for(len = 0; nameIn[len]; len++)
+    scopy[len] = nameIn[len];
+  scopy[len] = 0;
+
   if(node == NULL){
     node = BSTreeAlloc();
-    node->name = nameIn;
+    node->name = scopy;
   }else{
     int isLeft = 0;
     int comparison = 0;
@@ -34,10 +45,10 @@ treeNode *insertion(treeNode *node, char *nameIn){
     }
     if(isLeft){
       previous->lChild = BSTreeAlloc();
-      previous->lChild->name = nameIn;
+      previous->lChild->name = scopy;
     }else{
       previous->rChild = BSTreeAlloc();
-      previous->rChild->name = nameIn;
+      previous->rChild->name = scopy;
     }
   }
   return node;
