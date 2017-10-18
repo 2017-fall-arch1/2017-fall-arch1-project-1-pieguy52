@@ -17,3 +17,6 @@ BSTRreeTest.o: BSTreeTest.c BSTree.h
 clean:
 	rm -f *.o bstDemo
 	rm bstOut.txt
+
+demo: bstDemo
+	(echo 4; echo 3; echo 5; echo 9) | ./bstDemo
