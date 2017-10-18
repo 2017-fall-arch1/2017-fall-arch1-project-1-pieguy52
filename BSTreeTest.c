@@ -18,6 +18,7 @@ int gets_n(char *s, int limit){
 
 //Holds the user interface and the tree which is to be made and used for all operations
 //File type, fopen, feof all gotten from the YouTuber 'thenewboston' and his video C Programming Tutorial - 51 - How to Read Files
+//strtok functionality and explination found on stack overflow
 //Basic funcitonality learned and used, rest of implementation my own
 
 int main(){
@@ -59,7 +60,7 @@ int main(){
       fclose(fp);
       break;
     case '5':
-      printf("Printing tree to file 'bstDemoOut.txt'.");
+      printf("Printing tree to file 'bstOut.txt'.");
       fprintTree(root);
       break;
     case '9':

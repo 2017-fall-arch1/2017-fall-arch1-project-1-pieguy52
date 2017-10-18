@@ -3,6 +3,11 @@
 #include <string.h>
 #include "BSTree.h"
 
+//bst implemintation derived from old CS 2/3 notes, lectures, labs, etc
+
+
+//allocates the memory to the tree to be made
+//although the *char may not have a value given immediatly storage given when called
 treeNode *BSTreeAlloc(){
   treeNode *root = (treeNode *)malloc(sizeof(treeNode));
   root->lChild = NULL;
@@ -11,11 +16,13 @@ treeNode *BSTreeAlloc(){
   return root;
 }
 
+
+//code to insert names into tree
 treeNode *insertion(treeNode *node, char *nameIn){
   int len;
   char *scopy;
 
-
+  //code given in insertion of ll in demo code
   for(len =0; nameIn[len]; len++)
     ;
   scopy = (char *) malloc(len+1);
@@ -54,6 +61,7 @@ treeNode *insertion(treeNode *node, char *nameIn){
   return node;
 }
 
+//deletes names from the tree
 treeNode *deletion(treeNode *node, char *name){
   if(node == NULL)
     return NULL;
@@ -64,7 +72,7 @@ treeNode *deletion(treeNode *node, char *name){
     node->lChild = deletion(node->lChild, name);
   else if(comparison > 0)
     node->rChild = deletion(node->rChild, name);
-  else{
+  else{ // recursive calls to delete the children nodes that get promoted as nodes get erased
     if(node->lChild == NULL){
       current = node->rChild;
       free(node);
@@ -90,6 +98,8 @@ treeNode *deletion(treeNode *node, char *name){
   return node;
 }
 
+//Prints the tree recursively
+//states root and both children, if applicable, and recursivley calls to said children
 void printTree(treeNode *cNode){
   if(cNode == NULL)
     return;
@@ -105,6 +115,8 @@ void printTree(treeNode *cNode){
   printTree(cNode->rChild);
 }
 
+//prints existing tree into file, appending to file with each print
+//fputs funcitonality and usage found at tutorialspoint C - File I/O
 void fprintTree(treeNode *cNode){
   if(cNode == NULL)
     return;

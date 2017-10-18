@@ -1,0 +1,71 @@
+Remigio Maximinus
+ Left Child: Palmer Patricio
+ Right Child: Susan Sarandon
+Palmer Patricio
+ Left Child: Mundzuk Valentin
+ Right Child: Ratimir Nero
+Mundzuk Valentin
+ Left Child: Ayyy Lmao
+Ayyy Lmao
+ Left Child: Abdulah Vancho
+ Right Child: Heilyn Alejandro
+Abdulah Vancho
+ Right Child: Arsene Golshan
+Arsene Golshan
+ Left Child: Abraam Rikard
+Abraam Rikard
+ Right Child: Adebola Hachiro
+Adebola Hachiro
+ Right Child: Aithan Cowal
+Aithan Cowal
+ Right Child: Aran Gwilherm
+Aran Gwilherm
+ Right Child: Aravinda Radoslav
+Aravinda Radoslav
+Heilyn Alejandro
+ Left Child: Billie Joe Armstrong
+ Right Child: Kurt Cobain
+Billie Joe Armstrong
+ Right Child: Eiran Xenon
+Eiran Xenon
+ Left Child: Edvin Ye-Jun
+ Right Child: Epiktetos Junaid
+Edvin Ye-Jun
+ Left Child: Dexter Holland
+Dexter Holland
+ Right Child: Dubhshlaine Olukayode
+Dubhshlaine Olukayode
+Epiktetos Junaid
+Kurt Cobain
+ Left Child: Jenci Jasper
+ Right Child: Mike Dirnt
+Jenci Jasper
+ Right Child: Khachatur Mateus
+Khachatur Mateus
+ Left Child: Kai Mikel
+Kai Mikel
+Mike Dirnt
+Ratimir Nero
+ Left Child: Raju Iomhar
+Raju Iomhar
+ Left Child: Prudence Kuno
+Prudence Kuno
+ Right Child: Raimondo Altan
+Raimondo Altan
+Susan Sarandon
+ Left Child: Roman Maximillian
+ Right Child: Vahagn Belial
+Roman Maximillian
+ Right Child: Ruud Sharif
+Ruud Sharif
+ Right Child: Shekhar Wilfrio
+Shekhar Wilfrio
+Vahagn Belial
+ Left Child: Tim Minchin
+Tim Minchin
+ Right Child: Tylor Gervas
+Tylor Gervas
+ Left Child: Tre Cool
+Tre Cool
+ Right Child: Tre Cool
+Tre Cool
