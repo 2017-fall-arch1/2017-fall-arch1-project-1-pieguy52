@@ -15,4 +15,5 @@ treeNode *deletion(treeNode *node, char *name);
 
 void printTree(treeNode *cNode);
 
+void fprintTree(treeNode *cNode);
 #endif 

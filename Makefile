@@ -16,4 +16,4 @@ BSTRreeTest.o: BSTreeTest.c BSTree.h
 
 clean:
 	rm -f *.o bstDemo
-
+	rm bstOut.txt

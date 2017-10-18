@@ -97,10 +97,35 @@ void printTree(treeNode *cNode){
   printf("%s", cNode->name);
 
   if(cNode->lChild != NULL)
-    printf(" Left Child: %s", cNode->lChild->name);
+    printf("\n Left Child: %s", cNode->lChild->name);
   if(cNode->rChild != NULL)
-    printf(" Right Child: %s", cNode->rChild->name);
+    printf("\n Right Child: %s", cNode->rChild->name);
   printf("\n");
   printTree(cNode->lChild);
   printTree(cNode->rChild);
+}
+
+void fprintTree(treeNode *cNode){
+  if(cNode == NULL)
+    return;
+  
+  FILE *fp;
+  fp = fopen("bstOut.txt", "a");
+  
+  fputs(cNode->name, fp);
+
+  if(cNode->lChild != NULL){
+    fputs("\n Left Child: ", fp);
+    fputs(cNode->lChild->name, fp);
+  }
+  if(cNode->rChild != NULL){
+    fputs("\n Right Child: ", fp);
+    fputs(cNode->rChild->name, fp);
+  }
+  
+  fputs("\n", fp);
+  fclose(fp);
+  
+  fprintTree(cNode->lChild);
+  fprintTree(cNode->rChild);
 }
